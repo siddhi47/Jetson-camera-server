@@ -1,0 +1,12 @@
+lxml
+tqdm
+absl-py
+matplotlib
+easydict
+pillow
+bottle 
+pandas
+openpyxl
+Shapely 
+PyYAML
+boto3
