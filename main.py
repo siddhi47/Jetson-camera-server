@@ -39,16 +39,10 @@ if __name__ == '__main__':
     display_height=540,
     framerate=30,
     flip_method=0,
-    #vs = cv2.VideoCapture(
-    #    "nvgstcapture-1.0 --orientation=2"
-    #    )
     vs = camera.open_cam_onboard(capture_width, capture_height)
 
     while True:
         frame = vs.read()[1]
-        #frame = frame[1] if args["input"] is not None else frame
-        # if we are viewing a video and we did not grab a frame then we
-        # have reached the end of the video
         if args["input"] is not None and frame is None:
             break
 
